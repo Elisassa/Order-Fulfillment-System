@@ -47,6 +47,7 @@ public:
 ### Line Management
 The LineManager class coordinates the movement of orders through the assembly line's workstations. It ensures that orders are processed efficiently and manages the order flow between stations.
 
+```
 class LineManager {
 public:
     // Constructor
@@ -61,10 +62,12 @@ public:
     // Method to display the status of stations in the assembly line
     void display(std::ostream& os) const;
 };
+```
 
 ### Workstation Functionality
 The Workstation class represents individual workstations that process orders and update inventory. Each workstation fills items and moves orders to the next station in the assembly line.
 
+```
 class Workstation {
 public:
     // Method to fill items at the workstation
@@ -79,6 +82,7 @@ public:
     // Method to display the status of the workstation
     void display(std::ostream& os) const;
 };
+```
 
 ## Example Files
 - AssemblyLine.txt: Configuration of the assembly line, indicating the order in which stations are connected.

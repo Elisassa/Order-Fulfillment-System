@@ -25,22 +25,7 @@ This project simulates an assembly line where customer orders are processed thro
 The system utilizes dynamic memory allocation and move semantics to manage order processing efficiently, allowing flexible memory management and improved performance.
 
 
-
-## CustomerOrder constructor
-CustomerOrder::CustomerOrder(const std::string& line) {
-    // ...
-    while (more) {
-        // Allocate memory dynamically for new Item objects
-        // ...
-    }
-}
-
-// Move constructor for CustomerOrder
-CustomerOrder::CustomerOrder(CustomerOrder&& RO) noexcept {
-    *this = std::move(RO);
-}
-
-## Customer Order Handling
+### Customer Order Handling
 The CustomerOrder class represents and manages customer orders. It stores order details, processes item requests, and checks the status of each order.
 
 class CustomerOrder {
@@ -58,7 +43,7 @@ public:
     bool isItemFilled(const std::string& itemName) const;
 };
 
-## Line Management
+### Line Management
 The LineManager class coordinates the movement of orders through the assembly line's workstations. It ensures that orders are processed efficiently and manages the order flow between stations.
 
 class LineManager {
@@ -76,7 +61,7 @@ public:
     void display(std::ostream& os) const;
 };
 
-## Workstation Functionality
+### Workstation Functionality
 The Workstation class represents individual workstations that process orders and update inventory. Each workstation fills items and moves orders to the next station in the assembly line.
 
 class Workstation {

@@ -96,6 +96,7 @@ public:
     // Method to display the status of the workstation
     void display(std::ostream& os) const;
 };
+
 Example Input Files
 - AssemblyLine.txt: Configuration of the assembly line, indicating the order in which stations are connected.
 - CustomerOrders.txt: List of customer orders to be processed by the system.

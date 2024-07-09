@@ -39,10 +39,9 @@ CustomerOrder::CustomerOrder(const std::string& line) {
 CustomerOrder::CustomerOrder(CustomerOrder&& RO) noexcept {
     *this = std::move(RO);
 }
-Customer Order Handling
-The CustomerOrder class represents and manages customer orders. It stores order details, processes item requests, and checks the status of each order.
 
-// Example code demonstrating CustomerOrder class
+## Customer Order Handling
+The CustomerOrder class represents and manages customer orders. It stores order details, processes item requests, and checks the status of each order.
 
 class CustomerOrder {
 public:
@@ -58,10 +57,9 @@ public:
     // Method to check if a specific item in the order is filled
     bool isItemFilled(const std::string& itemName) const;
 };
-Line Management
-The LineManager class coordinates the movement of orders through the assembly line's workstations. It ensures that orders are processed efficiently and manages the order flow between stations.
 
-// Example code demonstrating LineManager class
+## Line Management
+The LineManager class coordinates the movement of orders through the assembly line's workstations. It ensures that orders are processed efficiently and manages the order flow between stations.
 
 class LineManager {
 public:
@@ -77,10 +75,9 @@ public:
     // Method to display the status of stations in the assembly line
     void display(std::ostream& os) const;
 };
-Workstation Functionality
-The Workstation class represents individual workstations that process orders and update inventory. Each workstation fills items and moves orders to the next station in the assembly line.
 
-// Example code demonstrating Workstation class
+## Workstation Functionality
+The Workstation class represents individual workstations that process orders and update inventory. Each workstation fills items and moves orders to the next station in the assembly line.
 
 class Workstation {
 public:
@@ -97,13 +94,13 @@ public:
     void display(std::ostream& os) const;
 };
 
-##Example Input Files
+## Example Input Files
 - AssemblyLine.txt: Configuration of the assembly line, indicating the order in which stations are connected.
 - CustomerOrders.txt: List of customer orders to be processed by the system.
 - Stations1.txt and Stations2.txt: Details about the stations involved in the fulfillment process, including item names, serial numbers, quantities, and descriptions.
 - Example Output
 After running the Order Fulfillment System, the program will display the processed orders, inventory status, and any relevant information about the assembly line operations.
 
-##Dependencies
+## Dependencies
 - C++ compiler
 - Input files in CSV and text formats

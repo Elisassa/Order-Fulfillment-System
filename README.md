@@ -11,7 +11,6 @@ The Order Fulfillment System is a C++ application designed to simulate an assemb
   - [Line Management](#line-management)
   - [Workstation Functionality](#workstation-functionality)
 - [Example Input Files](#example-input-files)
-- [Example Output](#example-output)
 - [Dependencies](#dependencies)
 
 ## Project Overview
@@ -79,7 +78,7 @@ public:
     void display(std::ostream& os) const;
 };
 
-## Example Input Files
+## Example Files
 - AssemblyLine.txt: Configuration of the assembly line, indicating the order in which stations are connected.
 - CustomerOrders.txt: List of customer orders to be processed by the system.
 - Stations1.txt and Stations2.txt: Details about the stations involved in the fulfillment process, including item names, serial numbers, quantities, and descriptions.

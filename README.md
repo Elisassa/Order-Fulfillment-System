@@ -27,6 +27,7 @@ The system utilizes dynamic memory allocation and move semantics to manage order
 ### Customer Order Handling
 The CustomerOrder class represents and manages customer orders. It stores order details, processes item requests, and checks the status of each order.
 
+```
 class CustomerOrder {
 public:
     // Constructor
@@ -41,6 +42,7 @@ public:
     // Method to check if a specific item in the order is filled
     bool isItemFilled(const std::string& itemName) const;
 };
+```
 
 ### Line Management
 The LineManager class coordinates the movement of orders through the assembly line's workstations. It ensures that orders are processed efficiently and manages the order flow between stations.

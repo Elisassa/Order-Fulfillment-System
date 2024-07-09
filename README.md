@@ -97,13 +97,13 @@ public:
     void display(std::ostream& os) const;
 };
 
-Example Input Files
+##Example Input Files
 - AssemblyLine.txt: Configuration of the assembly line, indicating the order in which stations are connected.
 - CustomerOrders.txt: List of customer orders to be processed by the system.
 - Stations1.txt and Stations2.txt: Details about the stations involved in the fulfillment process, including item names, serial numbers, quantities, and descriptions.
 - Example Output
 After running the Order Fulfillment System, the program will display the processed orders, inventory status, and any relevant information about the assembly line operations.
 
-Dependencies
+##Dependencies
 - C++ compiler
 - Input files in CSV and text formats

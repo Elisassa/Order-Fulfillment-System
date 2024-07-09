@@ -14,15 +14,19 @@ The Order Fulfillment System is a C++ application designed to simulate an assemb
 - [Example Output](#example-output)
 - [Dependencies](#dependencies)
 
+## Project Overview
+
 This project simulates an assembly line where customer orders are processed through multiple workstations. Each workstation holds specific stock items and fills customer orders as they move along the line. The line manager oversees the movement of orders, ensuring efficient processing. The project demonstrates skills in C++ object-oriented programming, dynamic memory management, and effective resource handling.
 
-Features
-Dynamic Order Processing
+## Features
+
+### Dynamic Order Processing
+
 The system utilizes dynamic memory allocation and move semantics to manage order processing efficiently, allowing flexible memory management and improved performance.
 
-// Example code demonstrating dynamic memory allocation and move semantics
 
-// CustomerOrder constructor
+
+## CustomerOrder constructor
 CustomerOrder::CustomerOrder(const std::string& line) {
     // ...
     while (more) {

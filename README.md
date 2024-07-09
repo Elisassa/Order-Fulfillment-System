@@ -2,28 +2,24 @@
 Order Fulfillment System
 The Order Fulfillment System is a C++ application designed to simulate an assembly line with multiple workstations. Each workstation processes customer orders by filling requested items if available in stock. The project showcases the use of object-oriented programming, dynamic memory management, and move semantics in C++ to efficiently manage customer orders, inventory, and processing.
 
-Table of Contents
-Project Overview
-Features
-Dynamic Order Processing
-Customer Order Handling
-Line Management
-Workstation Functionality
-Example Input Files
-Example Output
-Dependencies
-Installation
-Usage
-License
-Project Overview
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+  - [Dynamic Order Processing](#dynamic-order-processing)
+  - [Customer Order Handling](#customer-order-handling)
+  - [Line Management](#line-management)
+  - [Workstation Functionality](#workstation-functionality)
+- [Example Input Files](#example-input-files)
+- [Example Output](#example-output)
+- [Dependencies](#dependencies)
+
 This project simulates an assembly line where customer orders are processed through multiple workstations. Each workstation holds specific stock items and fills customer orders as they move along the line. The line manager oversees the movement of orders, ensuring efficient processing. The project demonstrates skills in C++ object-oriented programming, dynamic memory management, and effective resource handling.
 
 Features
 Dynamic Order Processing
 The system utilizes dynamic memory allocation and move semantics to manage order processing efficiently, allowing flexible memory management and improved performance.
 
-cpp
-複製程式碼
 // Example code demonstrating dynamic memory allocation and move semantics
 
 // CustomerOrder constructor
@@ -42,8 +38,6 @@ CustomerOrder::CustomerOrder(CustomerOrder&& RO) noexcept {
 Customer Order Handling
 The CustomerOrder class represents and manages customer orders. It stores order details, processes item requests, and checks the status of each order.
 
-cpp
-複製程式碼
 // Example code demonstrating CustomerOrder class
 
 class CustomerOrder {
@@ -63,8 +57,6 @@ public:
 Line Management
 The LineManager class coordinates the movement of orders through the assembly line's workstations. It ensures that orders are processed efficiently and manages the order flow between stations.
 
-cpp
-複製程式碼
 // Example code demonstrating LineManager class
 
 class LineManager {
@@ -84,8 +76,6 @@ public:
 Workstation Functionality
 The Workstation class represents individual workstations that process orders and update inventory. Each workstation fills items and moves orders to the next station in the assembly line.
 
-cpp
-複製程式碼
 // Example code demonstrating Workstation class
 
 class Workstation {
